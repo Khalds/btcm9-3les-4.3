@@ -34,7 +34,7 @@ module.exports.booksController = {
     }).catch((err) => res.json("Ошибка при получении книги"))
   },
   getBooks: (req, res) => {
-    Book.find().then((data) => {
+    Book.find().populate('bookAuthor').then((data) => {
       res.json(data)
     }).catch((err) => res.json("Ошибка при получении книг"))
   },

@@ -8,7 +8,7 @@ const {
 const router = Router();
 
 router.get('/genre', genreController.getGenre)
-router.post('/genre/:id', genreController.postGenre)
+router.post('/genre', genreController.postGenre)
 router.delete('/genre/:id', genreController.deleteDrinkById)
 
 module.exports = router;

@@ -6,7 +6,7 @@ app.use(express.json())
 app.use(require('./routes/books.route'))
 app.use(require('./routes/genres.route'))
 app.use(require('./routes/reviews.route'))
-
+app.use(require('./routes/authors.route'))
 
 mongoose.connect('mongodb+srv://admin:1111@cluster0.eazqc.mongodb.net/test', {
     useNewUrlParser: true,
